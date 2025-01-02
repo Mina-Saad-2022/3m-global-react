@@ -1,0 +1,106 @@
+.arabic{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+.title_arabic{
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+
+.swiper-slide img {
+    width: 100%; /* تملى الـ div كله */
+    height: 200px; /* الطول ثابت */
+    object-fit: contain;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    display: block;
+    margin: auto;
+}
+.green{
+    color: var(--accent-color);
+}
+
+@media only screen and (max-width: 768px), only screen and (max-width: 1024px) {
+  .short_title_arabic,.short_title {
+    font-size: small;
+  }
+  .carousel-item img {
+    height: 300px !important;}
+
+  .title_company {
+    font-size: 10vb !important;
+    padding: 15px !important;
+  }
+
+  .english {
+    width: 15%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* هنا تكتب الكود اللي هيظهر على الشاشات الكبيرة */
+    .title_company{
+        font-size: 12vb !important;
+        padding: 10PX;
+      
+    }
+
+    .short_title {
+        /* color: rgba(255, 168, 1,1.0); */
+        margin-left: 30px;
+      }
+
+}
+
+.larger{
+    font-size: larger !important;
+}
+.social-links {
+    display: flex;
+    gap: 15px; /* مسافة بين الأيقونات */
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white; /* لون أيقونة افتراضي */
+    font-size: 24px; /* حجم الأيقونة */
+    text-decoration: none; /* شيل التحت الخط */
+    transition: all 0.3s ease; /* أنيميشن عند الوقوف */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند الـ hover */
+  }
+  
+  .twitter {
+    color: #1DA1F2; /* لون تويتر */
+  }
+  
+  .facebook {
+    color: #1877F2; /* لون فيسبوك */
+  }
+  
+  .instagram {
+    color: #C13584; /* لون إنستجرام */
+  }
+  
+  .linkedin {
+    color: #0077B5; /* لون لينكد إن */
+  }
+  .carousel-container {
+    background-color: #f5f9ff;
+    padding: 20px 0;  /* حواف مريحة */
+}
+
+/* لو حبيت تضيف ظل أو شيء خاص */
+.carousel-inner {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navmenu li .active h6{
+    color: var(--accent-color)
+}

@@ -1,0 +1,101 @@
+/* animation for products */
+.service-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+}
+
+.service-item img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service-item .arabic {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: green; /* الخلفية الخضراء */
+  color: white;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.service-item:hover .arabic {
+  bottom: 0;
+}
+
+.service-item:hover img {
+  transform: scale(1.1); /* تكبير الصورة بشكل خفيف */
+}
+
+.english {
+  width: 220%;
+}
+
+@media only screen and (max-width: 768px) {
+  .short_title_arabic {
+    font-size: medium;
+  }
+  
+  .title_company {
+    font-size: 10vb !important;
+    padding: 15px !important;
+  }
+
+  .english {
+    width: 15%;
+  }
+}
+
+.service-item .title_arabic {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.carousel-container {
+  background-color: #f5f9ff; /* لون خلفية */
+  padding: 0; /* لا حاجة للحواف بالمحيط */
+  position: relative; /* لجعل العناصر الموجودة فوقها في موضعها */
+  overflow: hidden; /* لإخفاء أي أجزاء من الصورة تتجاوز الحاوية */
+}
+
+.carousel-inner {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل مُحسن */
+  transition: transform 3s ease-in-out; /* ادمج هنا */
+}
+
+.carousel-item {
+  position: relative; /* لجعل عناصر التخطيط تظهر فوق الصورة */
+  text-align: center; /* توسيط المحتوى */
+}
+
+.carousel-item img {
+  width: 100%; /* لتكون الصورة بنفس عرض الحاوية */
+  height: auto; /* المحافظة على النسبة بين العرض والارتفاع */
+  display: block; /* التأكد من عرض الصورة بشكل صحيح */
+}
+
+.layout {
+  position: absolute; /* لجعل الـ layout فوق الصورة */
+  top: 50%; /* توسيط المحتوى عموديًا */
+  left: 50%; /* توسيط المحتوى أفقيًا */
+  transform: translate(-50%, -50%); /* لجعل النقطة الأصلية في منتصف */
+  width: 100%; /* العرض الكامل */
+  height: 100%; /* الارتفاع الكامل */
+  background-color: rgba(255, 255, 255, 0.7); /* خلفية بيضاء شفافة */
+  display: flex; /* لتمكين التخطيط المرن */
+  justify-content: center; /* توسيط المحتوى أفقيًا */
+  align-items: center; /* توسيط المحتوى عموديًا */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none; /* إخفاء الأسهم */
+}
