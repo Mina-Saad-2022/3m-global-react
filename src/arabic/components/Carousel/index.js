@@ -12,7 +12,7 @@ const CarouselComponent = () => {
           <div className="carousel-item">
             <img className="d-block w-100" src="https://www2.0zz0.com/2024/12/21/22/529073265.jpg" alt="Second slide" />
           </div>
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/909730796.jpg" alt="Second slide" />
           </div>
           <div className="carousel-item">
@@ -20,7 +20,7 @@ const CarouselComponent = () => {
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/735195301.jpg" alt="Second slide" />
-          </div>
+          </div> */}
         </div>
         <div className="layout">
           <section id="hero" className="hero section light-background">
