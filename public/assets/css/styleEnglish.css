@@ -40,5 +40,75 @@
     font-size: 24px;
   }
   .english{
-    width: 210%;
+    width: 34px;
   }
+
+  .carousel-container {
+    background-color: #f5f9ff;
+    /* لون خلفية */
+    padding: 0;
+    /* لا حاجة للحواف بالمحيط */
+    position: relative;
+    /* لجعل العناصر الموجودة فوقها في موضعها */
+    overflow: hidden;
+    /* لإخفاء أي أجزاء من الصورة تتجاوز الحاوية */
+  }
+
+  .carousel-inner {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* ظل مُحسن */
+  }
+
+  .carousel-item {
+    position: relative;
+    /* لجعل عناصر التخطيط تظهر فوق الصورة */
+    text-align: center;
+    /* توسيط المحتوى */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    /* لتكون الصورة بنفس عرض الحاوية */
+    height: auto;
+    /* الحفاظ على النسبة بين العرض والارتفاع */
+    display: block;
+    /* التأكد من عرض الصورة بشكل صحيح */
+  }
+
+  .layout {
+    position: absolute;
+    /* لجعل الـ layout فوق الصورة */
+    top: 50%;
+    /* توسيط المحتوى عموديًا */
+    left: 50%;
+    /* توسيط المحتوى أفقيًا */
+    transform: translate(-50%, -50%);
+    /* لجعل النقطة الأصلية في منتصف */
+    width: 100%;
+    /* العرض الكامل */
+    height: 100%;
+    /* الارتفاع الكامل */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* خلفية بيضاء شفافة */
+    display: flex;
+    /* لتمكين التخطيط المرن */
+    justify-content: center;
+    /* توسيط المحتوى أفقيًا */
+    align-items: center;
+    /* توسيط المحتوى عموديًا */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+    /* إخفاء الأسهم */
+  }
+
+  .navmenu.show {
+    display: block; /* عرض القائمة عند فتحها */
+  }
+  
+  .mobile-nav-toggle {
+    cursor: pointer; /* تغيير شكل المؤشر عند التحويم على الأيقونة */
+  }
+  

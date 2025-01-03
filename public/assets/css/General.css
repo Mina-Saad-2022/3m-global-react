@@ -104,3 +104,6 @@
 .navmenu li .active h6{
     color: var(--accent-color)
 }
+a{
+  text-decoration: none !important; 
+}
