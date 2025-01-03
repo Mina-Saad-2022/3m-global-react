@@ -27,7 +27,7 @@ const CarouselComponent = () => {
                   </h3>
                   <div className="d-flex">
                     <a href="https://www.youtube.com/watch?v=NMhXRfTmAX8" className="glightbox btn-watch-video d-flex align-items-center">
-                      <span>Watch the introductory video</span>
+                      <span>Watch intro video</span>
                       <i className="bi bi-play-circle"></i>
                     </a>
                     <a href="#about" className="btn-get-started">Get started</a>

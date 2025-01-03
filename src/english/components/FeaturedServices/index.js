@@ -52,11 +52,9 @@ const FeaturedServicesSection = () => {
                   <i className={`${service.iconClass} icon`} />
                 </div>
                 <h4>
-                  <a href="" className="stretched-link">
-                    {service.title}
-                  </a>
+                {service.title}
                 </h4>
-                <p className="arabic">{service.description}</p>
+                <p className="arabic">{service.title} <br /> {service.description}</p>
               </div>
             </div>
           ))}

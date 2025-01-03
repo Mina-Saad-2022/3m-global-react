@@ -42,7 +42,7 @@ const Pricing = () => {
       features: [
         'Improves land production capacity',
         'Environmentally friendly enriched products',
-        'Helps in the development of the agricultural sector',
+        'Supports agricultural development',
         'Enhances soil efficiency in arid lands',
         'Long-term soil solutions',
       ],

@@ -33,7 +33,7 @@
 }
 
 .english {
-  width: 106%;
+  width: 8%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -98,4 +98,66 @@
 .carousel-control-prev,
 .carousel-control-next {
   display: none; /* إخفاء الأسهم */
+}
+
+.sticky-top div{
+  direction: ltr;
+}
+/* إخفاء أيقونة القائمة على الشاشات الكبيرة */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* إخفاء أيقونة القائمة على الشاشات الكبيرة */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* إظهار أيقونة القائمة على الشاشات الصغيرة */
+@media (max-width: 1200px) {
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000; /* لون الأيقونة */
+    position: absolute;
+    right: 20px; /* وضع الأيقونة على اليمين */
+    top: 50%; /* توسيط عموديًا */
+    transform: translateY(-50%);
+  }
+
+  #navmenu ul {
+    display: flex; /* إظهار القائمة */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    position: absolute;
+    top: 100%; /* وضع القائمة أسفل الهيدر */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* لون خلفية القائمة */
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل للقائمة */
+    height: 320px; /* ارتفاع القائمة */
+    overflow-y: auto; /* جعل القائمة قابلة للتمرير إذا كانت طويلة */
+    text-align: right; /* محاذاة النص لليسار */
+    direction: rtl; /* اتجاه النص من اليسار إلى اليمين */
+    opacity: 0; /* إخفاء القائمة */
+    transform: translateY(-20px); /* تحريك القائمة للأعلى قليلاً */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* إضافة حركة سلسة */
+    pointer-events: none; /* منع التفاعل مع القائمة عندما تكون مخفية */
+  }
+
+  #navmenu ul.active {
+    opacity: 1; /* إظهار القائمة */
+    transform: translateY(0); /* إعادة القائمة إلى مكانها */
+    pointer-events: auto; /* السماح بالتفاعل مع القائمة */
+  }
+}
+
+.navmenu {
+  direction: rtl;
+}
+
+.arabic {
+  height: 93px;
 }

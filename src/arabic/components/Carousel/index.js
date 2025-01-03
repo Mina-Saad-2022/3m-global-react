@@ -21,7 +21,7 @@ const CarouselComponent = () => {
                   <h1 className="title_arabic p-2 title_company">
                     <span className="bolder">3M-GLOBAL</span><br />
                   </h1>
-                  <h4 className="short_title">Agricultural & Environmental Services</h4>
+                  <h3 className="title_arabic short_title">الخدمات الزراعية والبيئية</h3>
                   <h3 className="arabic p-2 title_arabic short_title_arabic">
                     نهج الزراعة العضوية للحفاظ علي البيئة الزراعية المصرية
                   </h3>

@@ -62,9 +62,8 @@ const ServicesSection = () => {
                 <div className="image-container">
                   <img className="w-50 rounded" src={service.imgSrc} alt={service.title} />
                 </div>
-                <a href="#" className="stretched-link">
-                  <h3 className="title_arabic">{service.title}</h3>
-                </a>
+                <h3 className="title_arabic">{service.title}</h3>
+
                 <p className="arabic">{service.description}</p>
               </div>
             </div>
