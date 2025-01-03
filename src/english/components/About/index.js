@@ -13,7 +13,7 @@ const AboutSection = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2 className="larger">Our Vision</h2>
         <h1 className="title_arabic text-center p-2">
-          You can learn <span className="green">more about us</span>
+        Learn more <span className="green">about us</span>
         </h1>
       </div>
 
