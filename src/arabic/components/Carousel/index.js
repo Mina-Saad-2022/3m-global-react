@@ -67,7 +67,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const CarouselComponent = () => {
   return (
     <div className="carousel-container" style={carouselContainerStyle}>
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img className="d-block w-100" src="https://www2.0zz0.com/2024/12/21/22/999248171.jpeg" alt="First slide" />
