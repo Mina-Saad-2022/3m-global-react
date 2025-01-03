@@ -105,7 +105,7 @@ const ClientsSection = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXk7gsctxv5lZ9I97ok_EzLsOGfGWYNXUwpw&s"
               className="img-fluid w-50"
-              alt="Partner 8"
+              alt="Partner 7"
             />
           </div>
         </Slider>

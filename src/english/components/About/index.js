@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import 'aos/dist/aos.css'; // Import AOS CSS for animations
-import AOS from 'aos'; // Import AOS library
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const AboutSection = () => {
-  // Initialize AOS when the component loads
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <section id="about" className="about section light-background">
-      {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
         <h2 className="larger">Our Vision</h2>
         <h1 className="title_arabic text-center p-2">

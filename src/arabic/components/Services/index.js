@@ -1,7 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // استيراد CSS الخاص بـ Bootstrap
-import 'aos/dist/aos.css'; // تأكد من استيراد مكتبة AOS إذا كنت تستخدمها للأنيميشن
-import AOS from 'aos'; // استيراد AOS للأنيميشن
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 AOS.init();
 

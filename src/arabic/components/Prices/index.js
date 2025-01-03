@@ -62,7 +62,6 @@ const Pricing = () => {
       price: '50',
       image: 'https://www2.0zz0.com/2024/12/17/13/104934265.jpeg',
     },
-    
   ];
 
   return (

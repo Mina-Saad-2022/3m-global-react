@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "aos/dist/aos.css"; // Ensure importing AOS library for animations
-import AOS from "aos"; // Import AOS library
+import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 AOS.init();
 
@@ -78,7 +78,6 @@ const ServicesSection = () => {
                   />
                 </div>
                 <h3 className="title_arabic">{service.title}</h3>
-
                 <p className="arabic">{service.description}</p>
               </div>
             </div>

@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import 'aos/dist/aos.css'; // Ensure importing AOS library for animations
-import AOS from 'aos'; // Import AOS library
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const FeaturedServicesSection = () => {
-  // Initialize AOS when the component loads
   useEffect(() => {
     AOS.init();
   }, []);

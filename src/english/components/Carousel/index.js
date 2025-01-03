@@ -1,16 +1,25 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure importing Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CarouselComponent = () => {
   return (
     <div className="carousel-container" style={carouselContainerStyle}>
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-          <div className="carousel-item active">
+        <div className="carousel-item active">
             <img className="d-block w-100" src="https://www2.0zz0.com/2024/12/21/22/999248171.jpeg" alt="First slide" />
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src="https://www2.0zz0.com/2024/12/21/22/529073265.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/909730796.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/582133527.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/735195301.jpg" alt="Second slide" />
           </div>
         </div>
         <div className="layout">
@@ -42,7 +51,6 @@ const CarouselComponent = () => {
   );
 };
 
-// Define CSS styles using JavaScript object
 const carouselContainerStyle = {
   backgroundColor: '#f5f9ff',
   padding: '0',
@@ -50,5 +58,4 @@ const carouselContainerStyle = {
   overflow: 'hidden',
 };
 
-// Ensure that CSS and JavaScript libraries are loaded somewhere in the project
 export default CarouselComponent;

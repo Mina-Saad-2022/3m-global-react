@@ -41,7 +41,7 @@ const Testimonials = () => {
                 <i className="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div>{" "}
+          </div>
         </Slider>
       </div>
     </section>

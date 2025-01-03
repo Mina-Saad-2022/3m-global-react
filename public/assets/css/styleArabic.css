@@ -161,3 +161,9 @@
 .arabic {
   height: 93px;
 }
+
+.title_arabic {
+  font-family: "Cairo", serif;
+  /* font-optical-sizing: auto; */
+ 
+}

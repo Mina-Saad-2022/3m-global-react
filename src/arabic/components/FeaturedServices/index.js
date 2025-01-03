@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // استيراد CSS الخاص بـ Bootstrap
-import 'aos/dist/aos.css'; // تأكد من استيراد مكتبة AOS للأنيميشن
-import AOS from 'aos'; // استيراد AOS للأنيميشن
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const FeaturedServicesSection = () => {
-  // تفعيل AOS عند تحميل المكون
   useEffect(() => {
     AOS.init();
   }, []);

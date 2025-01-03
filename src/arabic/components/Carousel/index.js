@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // تأكد من استيراد CSS الخاص بـ Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CarouselComponent = () => {
   return (
@@ -11,6 +11,15 @@ const CarouselComponent = () => {
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src="https://www2.0zz0.com/2024/12/21/22/529073265.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/909730796.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/582133527.jpg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://www2.0zz0.com/2025/01/03/17/735195301.jpg" alt="Second slide" />
           </div>
         </div>
         <div className="layout">
@@ -42,7 +51,6 @@ const CarouselComponent = () => {
   );
 };
 
-// تعريف أنماط CSS باستخدام كائن JavaScript
 const carouselContainerStyle = {
   backgroundColor: '#f5f9ff',
   padding: '0',
@@ -50,5 +58,4 @@ const carouselContainerStyle = {
   overflow: 'hidden',
 };
 
-// التأكد من أن الإضافات من مكتبات CSS وجافا سكريبت قد تم تحميلها في مكان ما في المشروع
 export default CarouselComponent;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ContactInfoItem = ({ icon, title, content, socialLinks }) => {
   return (
@@ -9,7 +9,11 @@ const ContactInfoItem = ({ icon, title, content, socialLinks }) => {
         {socialLinks ? (
           <div className="social-links d-flex">
             {socialLinks.map((link, index) => (
-              <a key={index} href={link.url} className={`social-icon ${link.platform}`}>
+              <a
+                key={index}
+                href={link.url}
+                className={`social-icon ${link.platform}`}
+              >
                 <i className={`bi bi-${link.platform}`}></i>
               </a>
             ))}
@@ -25,28 +29,28 @@ const ContactInfoItem = ({ icon, title, content, socialLinks }) => {
 const Contact = () => {
   const contactInfo = [
     {
-      icon: 'bi-geo-alt',
-      title: 'Address',
-      content: '1 Al-Mithaq St., Zahraa Nasr City, Cairo',
+      icon: "bi-geo-alt",
+      title: "Address",
+      content: "1 Al-Mithaq St., Zahraa Nasr City, Cairo",
     },
     {
-      icon: 'bi-telephone',
-      title: 'Call Us',
-      content: '+20 0106740400',
+      icon: "bi-telephone",
+      title: "Call Us",
+      content: "+20 0106740400",
     },
     {
-      icon: 'bi-envelope',
-      title: 'Email',
-      content: 'info@el-warsha.com',
+      icon: "bi-envelope",
+      title: "Email",
+      content: "info@el-warsha.com",
     },
     {
-      icon: 'bi-telephone',
-      title: 'Follow Us',
+      icon: "bi-telephone",
+      title: "Follow Us",
       socialLinks: [
-        { platform: 'twitter', url: '#' },
-        { platform: 'facebook', url: '#' },
-        { platform: 'instagram', url: '#' },
-        { platform: 'linkedin', url: '#' },
+        { platform: "twitter", url: "#" },
+        { platform: "facebook", url: "#" },
+        { platform: "instagram", url: "#" },
+        { platform: "linkedin", url: "#" },
       ],
     },
   ];
@@ -56,7 +60,7 @@ const Contact = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Contact Us</h2>
         <p>
-          <span>You can reach us</span>{' '}
+          <span>You can reach us</span>{" "}
           <span className="description-title">24/7</span>
         </p>
       </div>
@@ -81,11 +85,12 @@ const Contact = () => {
             <iframe
               src="https://maps.google.com/maps?q=30.0509828,31.3965854&z=15&hl=en&output=embed"
               frameBorder="0"
-              style={{ border: 0, width: '100%', height: '420px' }}
+              style={{ border: 0, width: "100%", height: "420px" }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              title="Google Map location of 1 Al-Mithaq St., Zahraa Nasr City, Cairo"
+            />
           </div>
         </div>
       </div>
