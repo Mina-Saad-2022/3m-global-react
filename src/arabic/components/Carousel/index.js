@@ -108,6 +108,9 @@ const CarouselComponent = () => {
   );
 };
 
+// الكود هنا بيكون عبارة عن component وبالتالي لازم نضيف export
+export default CarouselComponent;
+
 const carouselContainerStyle = {
   backgroundColor: '#f5f9ff',
   padding: '0',
@@ -115,4 +118,3 @@ const carouselContainerStyle = {
   overflow: 'hidden',
 };
 
-export default CarouselComponent;
