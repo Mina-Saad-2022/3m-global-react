@@ -1,0 +1,165 @@
+.service-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .service-item img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .service-item .arabic {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    transition: bottom 0.3s ease-in-out;
+    background-color: green; /* الخلفية الخضراء */
+  }
+  
+  .service-item:hover .arabic {
+    bottom: 0;
+  }
+  
+  .service-item:hover img {
+    transform: scale(1.1); /* تكبير الصورة بشكل خفيف */
+  }
+  
+  .service-item .title_arabic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+  }
+  .english{
+  width: 50px;
+  }
+
+  .carousel-container {
+    background-color: #f5f9ff;
+    /* لون خلفية */
+    padding: 0;
+    /* لا حاجة للحواف بالمحيط */
+    position: relative;
+    /* لجعل العناصر الموجودة فوقها في موضعها */
+    overflow: hidden;
+    /* لإخفاء أي أجزاء من الصورة تتجاوز الحاوية */
+  }
+
+  .carousel-inner {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* ظل مُحسن */
+  }
+
+  .carousel-item {
+    position: relative;
+    /* لجعل عناصر التخطيط تظهر فوق الصورة */
+    text-align: center;
+    /* توسيط المحتوى */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    /* لتكون الصورة بنفس عرض الحاوية */
+    height: auto;
+    /* الحفاظ على النسبة بين العرض والارتفاع */
+    display: block;
+    /* التأكد من عرض الصورة بشكل صحيح */
+  }
+
+  .layout {
+    position: absolute;
+    /* لجعل الـ layout فوق الصورة */
+    top: 50%;
+    /* توسيط المحتوى عموديًا */
+    left: 50%;
+    /* توسيط المحتوى أفقيًا */
+    transform: translate(-50%, -50%);
+    /* لجعل النقطة الأصلية في منتصف */
+    width: 100%;
+    /* العرض الكامل */
+    height: 100%;
+    /* الارتفاع الكامل */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* خلفية بيضاء شفافة */
+    display: flex;
+    /* لتمكين التخطيط المرن */
+    justify-content: center;
+    /* توسيط المحتوى أفقيًا */
+    align-items: center;
+    /* توسيط المحتوى عموديًا */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+    /* إخفاء الأسهم */
+  }
+
+  .navmenu.show {
+    display: block; /* عرض القائمة عند فتحها */
+  }
+  
+  .mobile-nav-toggle {
+    cursor: pointer; /* تغيير شكل المؤشر عند التحويم على الأيقونة */
+  }
+  
+/* إخفاء أيقونة القائمة على الشاشات الكبيرة */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* إظهار أيقونة القائمة على الشاشات الصغيرة */
+@media (max-width: 1200px) {
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000; /* لون الأيقونة */
+    position: absolute;
+    left: 20px; /* وضع الأيقونة على اليمين */
+    top: 50%; /* توسيط عموديًا */
+    transform: translateY(-50%);
+  }
+
+  #navmenu ul {
+    display: flex; /* إظهار القائمة */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    position: absolute;
+    top: 100%; /* وضع القائمة أسفل الهيدر */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* لون خلفية القائمة */
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل للقائمة */
+    height: 320px; /* ارتفاع القائمة */
+    overflow-y: auto; /* جعل القائمة قابلة للتمرير إذا كانت طويلة */
+    text-align: right; /* محاذاة النص لليسار */
+    direction: ltr; /* اتجاه النص من اليسار إلى اليمين */
+    opacity: 0; /* إخفاء القائمة */
+    transform: translateY(-20px); /* تحريك القائمة للأعلى قليلاً */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* إضافة حركة سلسة */
+    pointer-events: none; /* منع التفاعل مع القائمة عندما تكون مخفية */
+  }
+  
+  #navmenu ul.active {
+    opacity: 1; /* إظهار القائمة */
+    transform: translateY(0); /* إعادة القائمة إلى مكانها */
+    pointer-events: auto; /* السماح بالتفاعل مع القائمة */
+  }
+ 
+}
+
+.sticky-top{
+  direction: rtl;
+}
+

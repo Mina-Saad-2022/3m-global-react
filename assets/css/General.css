@@ -1,0 +1,180 @@
+.arabic{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+.title_arabic{
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+
+.swiper-slide img {
+    width: 100%; /* تملى الـ div كله */
+    height: 200px; /* الطول ثابت */
+    object-fit: contain;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    display: block;
+    margin: auto;
+}
+.green{
+    color: var(--accent-color);
+}
+
+@media only screen and (max-width: 768px), only screen and (max-width: 1024px) {
+  .short_title_arabic,.short_title {
+    font-size: small;
+  }
+  .carousel-item img {
+    height: 300px !important;}
+
+  .title_company {
+    font-size: 10vb !important;
+    padding: 15px !important;
+  }
+
+  .english {
+    width: 15%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* هنا تكتب الكود اللي هيظهر على الشاشات الكبيرة */
+    .title_company{
+        font-size: 12vb !important;
+        padding: 10PX;
+      
+    }
+
+    .short_title {
+        /* color: rgba(255, 168, 1,1.0); */
+        margin-left: 30px;
+      }
+
+}
+
+.larger{
+    font-size: larger !important;
+}
+.social-links {
+    display: flex;
+    gap: 15px; /* مسافة بين الأيقونات */
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white; /* لون أيقونة افتراضي */
+    font-size: 24px; /* حجم الأيقونة */
+    text-decoration: none; /* شيل التحت الخط */
+    transition: all 0.3s ease; /* أنيميشن عند الوقوف */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند الـ hover */
+  }
+  
+  .twitter {
+    color: #1DA1F2; /* لون تويتر */
+  }
+  
+  .facebook {
+    color: #1877F2; /* لون فيسبوك */
+  }
+  
+  .instagram {
+    color: #C13584; /* لون إنستجرام */
+  }
+  
+  .linkedin {
+    color: #0077B5; /* لون لينكد إن */
+  }
+  .carousel-container {
+    background-color: #f5f9ff;
+    padding: 20px 0;  /* حواف مريحة */
+}
+
+/* لو حبيت تضيف ظل أو شيء خاص */
+.carousel-inner {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navmenu li .active h6{
+    color: var(--accent-color)
+}
+a{
+  text-decoration: none !important; 
+}
+
+/* scroll button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  border: none;
+  outline: none;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.scroll-to-top:active {
+  transform: scale(0.9);
+}
+
+.scroll-to-top i {
+  font-size: 24px;
+  color: white;
+}
+
+.scroll-to-top:hover i {
+  color: white;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  width: 100%;
+  transition: transform 0.6s ease;
+}
+
+.carousel-item.active {
+  display: block;
+}
