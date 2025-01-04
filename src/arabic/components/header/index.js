@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ArabicHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,14 +14,17 @@ const ArabicHeader = () => {
       <div className="branding d-flex align-items-center">
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <div className="logo d-flex align-items-center">
-            <img src="https://gcdnb.pbrd.co/images/BagDsRKe8AJU.png?o=1" alt="Logo" />
+            <img
+              src="https://gcdnb.pbrd.co/images/BagDsRKe8AJU.png?o=1"
+              alt="Logo"
+            />
           </div>
 
           <nav id="navmenu" className="navmenu">
-            <ul className={isMenuOpen ? 'active' : ''}>
+            <ul className={isMenuOpen ? "active" : ""}>
               <li>
                 <a href="#hero" className="active">
-                  <h6 className="title_arabic">الرئيسية</h6>
+                  <h6 className="title_arabic">##</h6>
                 </a>
               </li>
               <li>
