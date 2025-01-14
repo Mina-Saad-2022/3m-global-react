@@ -21,7 +21,7 @@ const ArabicHeader = () => {
             <ul className={isMenuOpen ? 'active' : ''}>
               <li>
                 <a href="#hero" className="active">
-                  <h6 className="title_arabic">الرئيسية</h6>
+                  <h6 className="title_arabic">test mina</h6>
                 </a>
               </li>
               <li>
