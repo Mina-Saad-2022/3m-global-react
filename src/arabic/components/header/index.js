@@ -14,10 +14,7 @@ const ArabicHeader = () => {
       <div className="branding d-flex align-items-center">
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <div className="logo d-flex align-items-center">
-            <img
-              src="https://gcdnb.pbrd.co/images/BagDsRKe8AJU.png?o=1"
-              alt="Logo"
-            />
+            <img src="/assets/img/logo/logo.png" alt="Logo" />
           </div>
 
           <nav id="navmenu" className="navmenu">
@@ -44,14 +41,14 @@ const ArabicHeader = () => {
               </li>
               <li>
                 <a href="#contact">
-                  <h6 className="title_arabic">تواصل </h6>
+                  <h6 className="title_arabic">تواصل معنا</h6>
                 </a>
               </li>
               <li>
                 <Link to="/english">
                   <img
                     className="english"
-                    src="https://gcdnb.pbrd.co/images/CDleLcrhsiZF.png?o=1"
+                    src="/assets/img/language/english.png"
                     alt="English"
                   />
                 </Link>

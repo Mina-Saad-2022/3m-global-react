@@ -14,10 +14,7 @@ const EnglishHeader = () => {
       <div className="branding d-flex align-items-center">
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <div className="logo d-flex align-items-center">
-            <img
-              src="https://gcdnb.pbrd.co/images/BagDsRKe8AJU.png?o=1"
-              alt="Logo"
-            />
+            <img src="/assets/img/logo/logo.png" alt="Logo" />
           </div>
 
           <nav id="navmenu" className="navmenu">
@@ -26,8 +23,8 @@ const EnglishHeader = () => {
                 <Link to="/">
                   <img
                     className="english"
-                    src="https://gcdnb.pbrd.co/images/T5eLiFIHR9a5.png?o=1"
-                    alt="English"
+                    src="/assets/img/language/arabic.png"
+                    alt="Arabic"
                   />
                 </Link>
               </li>
