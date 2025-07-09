@@ -44,7 +44,7 @@ const ArabicHeader = () => {
               </li>
               <li>
                 <a href="#contact">
-                  <h6 className="title_arabic">تواصل معنا</h6>
+                  <h6 className="title_arabic">تواصل </h6>
                 </a>
               </li>
               <li>
